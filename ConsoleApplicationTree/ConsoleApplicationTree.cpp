@@ -716,7 +716,7 @@ int main(int argc, char** argv)
 			A.search();
 		}
 		else if (returnString == "o") {
-			point* p = new point(window.mouse.x-512, -window.mouse.y+512, 10);
+			point* p = new point(window.mouse.x - 512, -window.mouse.y + 512, 10);
 			m.addpoint(m.root, p);
 		}
 		if (A.getEndNode() == true) {

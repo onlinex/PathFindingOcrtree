@@ -1,7 +1,2 @@
-﻿  ConsoleApplicationTree.cpp
-c:\users\gregory\documents\projectsmess\consoleapplicationtree\consoleapplicationtree\consoleapplicationtree.cpp(483): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-c:\users\gregory\documents\projectsmess\consoleapplicationtree\consoleapplicationtree\consoleapplicationtree.cpp(489): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-c:\users\gregory\documents\projectsmess\consoleapplicationtree\consoleapplicationtree\consoleapplicationtree.cpp(494): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-c:\users\gregory\documents\projectsmess\consoleapplicationtree\consoleapplicationtree\consoleapplicationtree.cpp(658): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-c:\users\gregory\documents\projectsmess\consoleapplicationtree\consoleapplicationtree\consoleapplicationtree.cpp(391): warning C4715: 'findClosest': not all control paths return a value
+﻿  window.cpp
   ConsoleApplicationTree.vcxproj -> C:\Users\Gregory\Documents\ProjectsMess\ConsoleApplicationTree\Debug\ConsoleApplicationTree.exe
