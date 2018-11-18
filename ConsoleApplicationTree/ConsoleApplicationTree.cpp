@@ -438,7 +438,7 @@ public:
 		end_y = endNode->y;
 		end_z = endNode->z;
 		refreshGValues();
-		addElement(&openset_scale, &openset_length, findClosest(root, start_x, start_y, 10.0), openset);
+		addElement(&openset_scale, &openset_length, findClosest(root, start_x, start_y, start_z), openset);
 		pathset_length = 0;
 		resizePathSet();
 	}
