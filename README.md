@@ -10,20 +10,20 @@ It is designed to quickly find a path through a 3d point cloud.
 SDL is used for visualization purposes.
 By default program is set to solve a task of finding a path in a 3d cube-like environment. X and Y coordinates of the start point can be set dynamically by aiming cursor on a preferable spot and pressing "s" button. Z coordinate is fixed on the upper edge of the the cube and the goal point is set to the top right corner on the bottom edge of the cube.
 By pressing "a" you add 300 random obtacle points in the center part of the cube.
-To add single point in a specific spot press "o"
+To add single point in a specific spot press "o", default z will be set to 10
 
-Debug/ConsoleApplicationTree.exe contains the working winows application
-ConsoleApplicationTree/ConsoleApplicationTree.cpp contains the main source code file
-ConsoleApplicationTree/Window.cpp contains the code for displaying graphics
+<i>Debug/ConsoleApplicationTree.exe</i> contains the working winows application
+<i>ConsoleApplicationTree/ConsoleApplicationTree.cpp</i> contains the main source code file
+<i>ConsoleApplicationTree/Window.cpp</i> contains the code for displaying graphics
 
-Class "manager" recieves 1 integer (<b>depth</b>, default 10) that means how many times you can divide the environment in half, increasing the accuracy of its construction.
+Class "manager" recieves 1 integer (<b>depth</b>, default 6) that means how many times you can divide the environment in half, increasing the accuracy of its construction.
 Class "AStar" receives the root node, minimum precision of search (integer = depth) and maximum precision of search (integer from 1 to depth)
 
 Resulting path is saved to <b>pathset</b> array in AStar class.
 <br></br>
 <p align="center"><b>2D version</b></p>
 
-In order to use algorithm in <b>2D</b> spaces, replace ConsoleApplicationTree/ConsoleApplicationTree.cpp file with ConsoleApplicationTree2D.cpp file from the root directory
+In order to use algorithm in <b>2D</b> spaces, replace <i>ConsoleApplicationTree/ConsoleApplicationTree.cpp</i> file with <i>ConsoleApplicationTree2D.cpp</i> file from the root directory
 <br></br>
 Blue dots are path vectors, right crosses show occupied space, green crosses show free space.
 
