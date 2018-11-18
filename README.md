@@ -19,4 +19,16 @@ ConsoleApplicationTree/Window.cpp contains the code for displaying graphics
 Class "manager" recieves 1 integer (<b>depth</b>, default 10) that means how many times you can divide the environment in half, increasing the accuracy of its construction.
 Class "AStar" receives the root node, minimum precision of search (integer = depth) and maximum precision of search (integer from 1 to depth)
 
+Resulting path is saved to <b>pathset</b> array in AStar class.
 
+<br>
+<p align="center"><b> 2D variant representation, depth = 4 </b></p>
+Blue dots are path vectors, right crosses show occupied space, green crosses show free space.
+<p align="center">
+  <image src="https://user-images.githubusercontent.com/29633052/48675325-811ba980-eb68-11e8-83a0-7f54ebbfaa3e.png" height="480"></image>
+</p>
+
+<p align="center"><b> 2D variant representation, depth = 6 </b></p>
+<p align="center">
+  <image src="https://user-images.githubusercontent.com/29633052/48675479-4f0b4700-eb6a-11e8-9333-860ef51dc11d.png" height="480"></image>
+</p>
