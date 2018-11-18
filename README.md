@@ -13,7 +13,7 @@ It is designed to quickly find a path through a 3d point cloud.
   <li><i>ConsoleApplicationTree/Window.cpp</i> is the code for displaying graphics</li>
 </ul>
 
-It is a Visual studio project
+It is a <b>Visual studio</b> project written in <b>C++</b>
 
 SDL library is already included in <b>externals</b> folder
 
