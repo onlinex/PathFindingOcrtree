@@ -20,13 +20,14 @@ Class "manager" recieves 1 integer (<b>depth</b>, default 10) that means how man
 Class "AStar" receives the root node, minimum precision of search (integer = depth) and maximum precision of search (integer from 1 to depth)
 
 Resulting path is saved to <b>pathset</b> array in AStar class.
-
-<br>
+<br></br>
 <p align="center"><b>2D version</b></p>
+
 In order to use algorithm in <b>2D</b> spaces, replace ConsoleApplicationTree/ConsoleApplicationTree.cpp file with ConsoleApplicationTree2D.cpp file from the root directory
-<br>
-<p align="center"><b> 2D variant representation, depth = 4 </b></p>
+<br></br>
 Blue dots are path vectors, right crosses show occupied space, green crosses show free space.
+
+<p align="center"><b> 2D variant representation, depth = 4 </b></p>
 <p align="center">
   <image src="https://user-images.githubusercontent.com/29633052/48675325-811ba980-eb68-11e8-83a0-7f54ebbfaa3e.png" height="480"></image>
 </p>
