@@ -71,7 +71,6 @@ std::string window::pollEvents() {
 				return "o";
 				break;
 			}
-			
 
 		case SDL_MOUSEMOTION:
 			//std::cout << event.motion.x << " , " << event.motion.y << "\n";

@@ -1,2 +1,8 @@
-﻿  window.cpp
-  ConsoleApplicationTree.vcxproj -> C:\Users\Gregory\Documents\ProjectsMess\ConsoleApplicationTree\Debug\ConsoleApplicationTree.exe
+﻿  ConsoleApplicationTree.cpp
+c:\users\grisha\documents\visual studio 2015\projects\consoleapplicationtree\consoleapplicationtree\consoleapplicationtree.cpp(495): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+c:\users\grisha\documents\visual studio 2015\projects\consoleapplicationtree\consoleapplicationtree\consoleapplicationtree.cpp(501): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+c:\users\grisha\documents\visual studio 2015\projects\consoleapplicationtree\consoleapplicationtree\consoleapplicationtree.cpp(506): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+c:\users\grisha\documents\visual studio 2015\projects\consoleapplicationtree\consoleapplicationtree\consoleapplicationtree.cpp(670): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+c:\users\grisha\documents\visual studio 2015\projects\consoleapplicationtree\consoleapplicationtree\consoleapplicationtree.cpp(403): warning C4715: 'findClosest': not all control paths return a value
+  ConsoleApplicationTree.vcxproj -> C:\Users\Grisha\Documents\Visual Studio 2015\Projects\ConsoleApplicationTree\Debug\ConsoleApplicationTree.exe
+  ConsoleApplicationTree.vcxproj -> C:\Users\Grisha\Documents\Visual Studio 2015\Projects\ConsoleApplicationTree\Debug\ConsoleApplicationTree.pdb (Full PDB)

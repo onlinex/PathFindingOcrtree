@@ -190,16 +190,21 @@ public:
 		pointer->third = new node(level, pointer->x - t_size, pointer->y - t_size, pointer->z + t_size, pointer);
 		pointer->forth = new node(level, pointer->x + t_size, pointer->y - t_size, pointer->z + t_size, pointer);
 		/////////
+
+		
 		pointer->fifth = new node(level, pointer->x + t_size, pointer->y + t_size, pointer->z - t_size, pointer);
 		pointer->sixth = new node(level, pointer->x - t_size, pointer->y + t_size, pointer->z - t_size, pointer);
 		pointer->seventh = new node(level, pointer->x - t_size, pointer->y - t_size, pointer->z - t_size, pointer);
 		pointer->eighth = new node(level, pointer->x + t_size, pointer->y - t_size, pointer->z - t_size, pointer);
+		
 
 		addConnection(pointer->first, pointer->second);
 		addConnection(pointer->second, pointer->third);
 		addConnection(pointer->third, pointer->forth);
 		addConnection(pointer->forth, pointer->first);
 		//////////
+
+		
 		addConnection(pointer->fifth, pointer->sixth);
 		addConnection(pointer->sixth, pointer->seventh);
 		addConnection(pointer->seventh, pointer->eighth);
@@ -209,6 +214,7 @@ public:
 		addConnection(pointer->second, pointer->sixth);
 		addConnection(pointer->third, pointer->seventh);
 		addConnection(pointer->forth, pointer->eighth);
+		
 
 		if (pointer->parent != nullptr) {
 			pointer->first->rearrangeConnections();
@@ -216,10 +222,12 @@ public:
 			pointer->third->rearrangeConnections();
 			pointer->forth->rearrangeConnections();
 			////////
+			
 			pointer->fifth->rearrangeConnections();
 			pointer->sixth->rearrangeConnections();
 			pointer->seventh->rearrangeConnections();
 			pointer->eighth->rearrangeConnections();
+			
 		}
 		
 		for (int i = 0; i < pointer->pc->getLength(); i++) {
@@ -239,6 +247,7 @@ public:
 				addpoint(pointer->forth, p);
 			}
 			//////////////
+			
 			else if (coordInNode(pointer->fifth, p->x, p->y, p->z)) {
 				addpoint(pointer->fifth, p);
 			}
@@ -274,6 +283,7 @@ public:
 				addpoint(pointer->forth, p);
 			}
 			//////////////
+			
 			else if (coordInNode(pointer->fifth, p->x, p->y, p->z)) {
 				addpoint(pointer->fifth, p);
 			}
@@ -335,7 +345,8 @@ public:
 			else if (coordInNode(pointer->forth, p->x, p->y, p->z)) {
 				removePoint(pointer->forth, p);
 			}
-			//////////////
+			////////////// 
+			
 			else if (coordInNode(pointer->fifth, p->x, p->y, p->z)) {
 				removePoint(pointer->fifth, p);
 			}
@@ -372,6 +383,7 @@ node* findClosest(node* pointer, float x, float y, float z) {
 			findClosest(pointer->forth, x, y, z);
 		}
 		//////////////
+		
 		else if (coordInNode(pointer->fifth, x, y, z)) {
 			findClosest(pointer->fifth, x, y, z);
 		}
@@ -662,8 +674,8 @@ void drawPath(window* window, AStar* a) {
 long double addRandomPoints(manager* manager, int n) {
 	long double timeTaken = 0;
 	for (int i = 0; i < n; i++) {
-		int min = -256;
-		int max = 256;
+		int min = -128;
+		int max = 128;
 		try {
 			srand(clock()*i*i);
 			int x = (min + (rand() % (int)(max - min + 1)));
@@ -689,8 +701,8 @@ int main(int argc, char** argv)
 {
 	int ret = 0;
 
-	manager m(10);
-	AStar A(m.root, 10, 3);
+	manager m(6);
+	AStar A(m.root, 6, 1);
 
 	window window("SDL", 1024, 1024);
 
