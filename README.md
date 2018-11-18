@@ -22,7 +22,9 @@ Class "AStar" receives the root node, minimum precision of search (integer = dep
 Resulting path is saved to <b>pathset</b> array in AStar class.
 
 <br>
-In order to use algorithm in 2D spaces, replace ConsoleApplicationTree/ConsoleApplicationTree.cpp file with ConsoleApplicationTree2D.cpp file from the root directory
+<p align="center"><b>2D version</b></p>
+In order to use algorithm in <b>2D</b> spaces, replace ConsoleApplicationTree/ConsoleApplicationTree.cpp file with ConsoleApplicationTree2D.cpp file from the root directory
+<br>
 <p align="center"><b> 2D variant representation, depth = 4 </b></p>
 Blue dots are path vectors, right crosses show occupied space, green crosses show free space.
 <p align="center">
